@@ -1,0 +1,19 @@
+A file format is needed to store information about the location and direction 
+of the camera, as well as the location of edges. The first line contains the 
+position of the camera, as a point. The second line contains the orientation
+of the camera, expressed as a tuple representing the rotation of camera in the 
+X, Y and Z direction in degrees. The remaining lines are tuples of points which
+denote the endpoints of the edges to be rendered. 
+
+The camera has a 90 degree field of view both vertically and horizontally, and 
+it's starting orientation (from which it is rotated) is along the -Z axis. So 
+the following example would have a single horizontal line across the middle of
+the image. The endpoints of the edge lie directly on the edge of the image.
+
+The .wf file extension is typically used, although it is not required. Lines 
+beginning with a pound sign are ignored.
+
+# horizontal-line.wf
+(0, 0, 0)
+(0, 0, 0)
+((1, 0, -1), (-1, 0, -1))
