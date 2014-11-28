@@ -1,2 +1,2 @@
-Camera (Point [0, 0, 0]) (Point [0, 0, 1])
-Edge (Point [(-1), 0, 1]) (Point [1, 0, 1])
+Camera {location = Point [0, 0, 0], orientation = Point [0, 0, 1]}
+[Edge (Point [(-1), 0, 1]) (Point [1, 0, 1])]
